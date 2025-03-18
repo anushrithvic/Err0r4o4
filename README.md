@@ -35,11 +35,13 @@ Make typing an **immersive and dynamic** experience! Whether it's a game, intera
 - Interactive UI components with JavaScript.
 - Cross-browser compatibility.
 - User-friendly navigation.
+- Pronounces the Text for learning.
+- Different Themes for User favors.
 
 Feel free to explore, contribute, and raise issues if you find any bugs or have suggestions for improvements!
 
 ---
 
 ### 📬 Contact
-For any queries, reach out to the team at [Mail](mailto:anushrithvic.com).
+For any queries, contact the team at [Mail](mailto:anushrithvic.com).
 
