@@ -46,5 +46,10 @@ Feel free to explore, contribute, and raise issues if you find any bugs or have 
 For any queries, contact the team at [Mail](mailto:anushrithvic.com).
 
 ![Alt text](sapce.png)
+![Alt text](ocean.png)
+![Alt text](punks.png)
+![Alt text](forests.png)
+
+
 
 
