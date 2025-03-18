@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Type to Play</title>
 </head>
-<body>
-    <header>
-        <h2 class="logo">Portfolio.</h2>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h3>Hello It's Me</h3>
-            <h1><span>Sem Johan</span></h1>
-            <h3>And I'm a <span class="highlight">Fronted Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere eros justo, sed hendrerit lacus molestie id.</p>
-            <div class="social-links">
-                <a href="#"><img src="twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="youtube.png" alt="YouTube"></a>
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            </div>
-            <button class="download-btn">Download CV</button>
-        </div>
-        <div class="hero-image">
-            <img src="profile.png" alt="Profile Picture">
-        </div>
-    </section>
+<body class="space-theme">
+  <!-- Video Background -->
+  <video id="backgroundVideo" autoplay loop muted>
+    <source src="videos/space.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-    <script src="script.js"></script>
+  <!-- Header Section -->
+  <h1 class="title">Type to <span>Play</span></h1>
+  <p class="subtitle">Interactive Typing Effects</p>
+
+  <!-- Theme Switcher -->
+  <div class="theme-switcher">
+    <button class="theme-btn active" onclick="changeTheme('space')">Space</button>
+    <button class="theme-btn" onclick="changeTheme('ocean')">Ocean</button>
+    <button class="theme-btn" onclick="changeTheme('cyberpunk')">Cyberpunk</button>
+    <button class="theme-btn" onclick="changeTheme('forest')">Forest</button>
+  </div>
+
+  <!-- Main Section -->
+  <h2>Watch Your Words <span>Come Alive</span></h2>
+  <p class="description">Type in the text area below and watch the effects!</p>
+
+  <!-- Typing Area -->
+  <div class="typing-container glassmorphic">
+    <textarea id="textInput" placeholder="Start typing..."></textarea>
+    <div class="status">
+      <span id="charCount">0 CPM</span>
+      <button id="clearBtn">Clear</button>
+    </div>
+  </div>
+
+  <!-- Bubble Container for Effects -->
+  <div id="bubbleContainer"></div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
