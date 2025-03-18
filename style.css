@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Video Background */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Typography */
+h1.title {
+  font-size: 3rem;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+h1 span {
+  color: #80aaff;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h2 span {
+  color: #b3d9ff;
+}
+
+.description {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+  margin: 20px;
+}
+
+.theme-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.theme-btn.active {
+  background-color: #80aaff;
+}
+
+/* Glassmorphic Effect */
+.glassmorphic {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Typing Area */
+.typing-container {
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+textarea {
+  width: 95%;
+  height: 150px;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  resize: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Status and Controls */
+.status {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#charCount {
+  font-size: 1.2rem;
+  color: #80aaff;
+}
+
+#clearBtn {
+  background-color: #80aaff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#clearBtn:hover {
+  background-color: #5a8fd6;
+}
+
+/* Bubble Animation */
+#bubbleContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  animation: bubbleAnimation 4s ease-out forwards;
+  filter: blur(2px);
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: scale(0.2) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5) translateY(-300px);
+    opacity: 0;
+  }
+}

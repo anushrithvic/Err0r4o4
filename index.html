@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Type to Play</title>
+</head>
+
+<body class="space-theme">
+  <!-- Video Background -->
+  <video id="backgroundVideo" autoplay loop muted>
+    <source src="videos/space.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Header Section -->
+  <h1 class="title">Type to <span>Play</span></h1>
+  <p class="subtitle">Interactive Typing Effects</p>
+
+  <!-- Theme Switcher -->
+  <div class="theme-switcher">
+    <button class="theme-btn active" onclick="changeTheme('space')">Space</button>
+    <button class="theme-btn" onclick="changeTheme('ocean')">Ocean</button>
+    <button class="theme-btn" onclick="changeTheme('cyberpunk')">Cyberpunk</button>
+    <button class="theme-btn" onclick="changeTheme('forest')">Forest</button>
+  </div>
+
+  <!-- Main Section -->
+  <h2>Watch Your Words <span>Come Alive</span></h2>
+  <p class="description">Type in the text area below and watch the effects!</p>
+
+  <!-- Typing Area -->
+  <div class="typing-container glassmorphic">
+    <textarea id="textInput" placeholder="Start typing..."></textarea>
+    <div class="status">
+      <span id="charCount">0 CPM</span>
+      <button id="clearBtn">Clear</button>
+    </div>
+  </div>
+
+  <!-- Bubble Container for Effects -->
+  <div id="bubbleContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
