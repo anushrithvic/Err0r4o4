@@ -1,4 +1,4 @@
-
+ok
 ---
 # 🚀 DEVX: CODE. CREATE. CONQUER
 
@@ -37,6 +37,7 @@ Make typing an **immersive and dynamic** experience! Whether it's a game, intera
 - User-friendly navigation.
 - Pronounces the Text for learning.
 - Different Themes for User favors.
+- Each theme has its own typing tones
 
 Feel free to explore, contribute, and raise issues if you find any bugs or have suggestions for improvements!
 
